@@ -1,0 +1,81 @@
+.strip-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #210808;
+    color: white;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.strip-container.hover {
+    background-color: white;
+    color: #210808;
+}
+
+.strip-content {
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.social-media-name {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.arrow {
+    margin-right: 2%;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.moving-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: #210808;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    animation: scroll-left 9s linear infinite;
+}
+
+.scrolling-item {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.scrolling-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(-20vw);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}

@@ -1,0 +1,43 @@
+/* Flipaclip.css */
+.project-container {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: #fffff7;
+  margin-bottom: 3vh;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.project-card {
+  opacity: 0.5;
+  background: black;
+  border-radius: 3vw;
+  color: white;
+  max-width: 40vw;
+  text-align: center;
+  box-shadow: 0 1vh 4vh rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 3vw;
+  object-fit: cover;
+
+}
+
+.project-footer {
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  font-size: 1vw;
+  color: #fffff7;
+}

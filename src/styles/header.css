@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  padding: 1.5vw 3vw;
+  display: flex;
+  justify-content: space-between
+    /*background-color: #f5f5f5;  Delete this line */
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+header .cv-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 4vw; */
+  margin-left: 10px;
+}
+
+header button {
+  all: unset;
+  font-size: 1vw;
+}
+
+header .cv-button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.projects-container {
+    background-color: #210808;
+    border-radius: 100px 100px 0 0;
+    padding-bottom: 4vh;
+}
+
+.projects-title {
+    padding-left: 10%;
+    padding-top: 5%;
+    font: 4rem "Poppins";
+    color: whitesmoke;
+}
+
+.projects-title img { 
+    padding: 0 1.25vw;
+    width: 10vw;
+    height: 5vw;
+    border-radius: 40%;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  
+.projects-text-top {
+    margin-left: 2%;
+}
+
+.projects-text-bottom {
+    margin-top: -40px;
+}
