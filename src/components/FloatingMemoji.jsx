@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import memoji from "../assets/memoji.gif";
 import gsap from 'gsap';
 
-// Styled component for CircleContainer
+// Styled component for CircleContainer with responsive styles
 const CircleContainer = styled.div`
   width: 5vw;
   height: 5vw;
@@ -20,6 +20,21 @@ const CircleContainer = styled.div`
   opacity: 0; /* Start with invisible */
   transform: scale(0); /* Start with scaled-down */
   visibility: hidden; /* Hide initially */
+
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 768px) {
+    width: 12vw;
+    height: 12vw;
+    bottom: 4vh;
+    right: 4vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 15vw;
+    height: 15vw;
+    bottom: 2vh;
+    right: 3vw;
+  }
 `;
 
 const Memoji = () => (
@@ -30,7 +45,6 @@ const Memoji = () => (
       left: '35%',
       transform: 'translate(-50%, -50%)',
     }}
-
   >
     <img width="150%" height="150%" src={memoji} alt="memoji" />
   </div>

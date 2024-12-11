@@ -79,3 +79,57 @@
     width: 100%;
     background-color: gray;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .strip-container {
+        flex-direction: column; /* Stack content vertically for tablets */
+        padding: 1.5rem; /* Increase padding for better spacing */
+    }
+
+    .strip-content {
+        flex-direction: column; /* Stack content vertically */
+        margin-left: 0; /* Center-align content */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .social-media-name {
+        font-size: 1rem; /* Adjust font size for readability on tablets */
+    }
+
+    .arrow {
+        margin: 0.5rem 0; /* Add spacing around the arrow */
+        font-size: 1.3rem; /* Adjust font size */
+    }
+
+    .moving-text {
+        font-size: 1rem; /* Reduce font size of scrolling text */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .strip-container {
+        padding: 1rem; /* Reduce padding for compact layout */
+    }
+
+    .strip-content {
+        /* flex-direction: column; Ensure vertical stacking */
+        /* text-align: center; Align all text centrally */
+    }
+
+    .social-media-name {
+        font-size: 0.9rem; /* Further reduce font size for small screens */
+    }
+
+    .arrow {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .moving-text {
+        font-size: 0.9rem; /* Reduce scrolling text size for smaller screens */
+    }
+
+    .scrolling-item {
+        margin-right: 1rem; /* Reduce margin between items */
+    }
+}

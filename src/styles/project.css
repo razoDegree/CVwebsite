@@ -41,3 +41,46 @@
   font-size: 1vw;
   color: #fffff7;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .project-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0 5vw; /* Add padding for smaller screens */
+  }
+
+  .project-card {
+    max-width: 70vw; /* Increase card width for tablets */
+    border-radius: 4vw; /* Adjust border-radius for a softer look */
+  }
+
+  .project-card img {
+    height: 40vh; /* Reduce image height */
+    border-radius: 4vw; /* Match the card’s border-radius */
+  }
+
+  .project-footer {
+    font-size: 2vw; /* Increase font size for readability */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-container {
+    padding: 0 3vw; /* Reduce padding for very small screens */
+  }
+
+  .project-card {
+    max-width: 90vw; /* Allow the card to fill more of the screen */
+    border-radius: 5vw; /* Further soften the border-radius */
+  }
+
+  .project-card img {
+    height: 70vh; /* Reduce height even more for small screens */
+    border-radius: 5vw; /* Match the card’s border-radius */
+  }
+
+  .project-footer {
+    font-size: 3vw; /* Further increase font size */
+  }
+}

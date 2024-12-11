@@ -10,7 +10,6 @@ function LandingContiner() {
                     <img src={codeRun} alt="code" />
                     guy who <br />loves to code
                 </h2>
-
             </div>
         </div>
     );

@@ -1,5 +1,54 @@
-.video-container video {
-    width: 100%;
-    height: auto;
-    z-index: -2;
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background: #ffffff; /* Background color */
+    overflow: hidden; /* Prevents any animation overflow */
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Video will stretch across the entire screen width */
+    height: 100%; /* Default: Full height for larger screens */
+    overflow: hidden; /* Ensures the animation stays within the container */
+}
+
+.static-video {
+    width: 100%; /* Full width of the video */
+    height: 100%; /* Default: Full height */
+    object-fit: cover; /* Maintain video aspect ratio */
+    z-index: 1; /* Behind the white box */
+    position: relative;
+}
+
+.cover-box {
+    position: absolute;
+    width: 100%; /* Full width of the video */
+    height: 100%; /* Cover the entire video area */
+    background-color: white; /* White cover box */
+    z-index: 10; /* Above the video */
+    top: 0; /* Start by covering the video */
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .video-wrapper {
+        height: 70vh; /* Keep full screen height */
+    }
+
+    .video-container {
+        width: 100%; /* Ensure the container fills the screen width */
+        height: 50vh; /* Only take 50% of the screen height */
+    }
+
+    .static-video {
+        width: 100%; /* Full width for mobile */
+        height: 100%; /* Match the container height */
+    }
+
+    .cover-box {
+        width: 100%; /* Full width of the video */
+        height: 100%; /* Cover the entire video area */
+    }
 }

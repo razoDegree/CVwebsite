@@ -28,3 +28,22 @@ header button {
 header .cv-button:hover {
   cursor: pointer;
 }
+
+/* Responsive Design for header */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 4vw 5vw; /* Adjust padding for mobile */
+  }
+
+  header h1 {
+    font-size: 5vw; /* Increase font size for smaller screens */
+  }
+
+  header button {
+    display: none; /* Increase button font size for readability */
+  }
+
+  header .cv-button {
+    margin-left: 5px; /* Adjust spacing for mobile */
+  }
+}

@@ -1,61 +1,105 @@
 .shortDes {
-    margin: 10% 10% 10% 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  margin: 10% 10% 10% 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .shortDes img {
-    padding-right: 5%;
-    width: 40%;
-    height: auto;
-    transform: rotate(-25deg);
+  padding-right: 5%;
+  width: 40%; /* Adjusted size for larger screens */
+  height: auto;
+  transform: rotate(-25deg);
 }
 
 .shortDes-text {
-    width: 40%;
-    padding-left: 5%;
-    font-size: 1.75vw;
+  width: 40%;
+  padding-left: 5%;
+  font-size: 1.75vw;
 }
 
 .shortDes p {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 .shortDes button {
-    position: relative;
-    padding: 3vw 4vw;
-    font-size: 1.5vw;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 4vw;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden; /* Ensures the pseudo-element stays inside the button */
-    z-index: 0;
-    transition: color 0.5s ease; /* Smooth text color transition */
+  position: relative;
+  padding: 3vw 4vw;
+  font-size: 1.5vw;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4vw;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the pseudo-element stays inside the button */
+  z-index: 0;
+  transition: color 0.5s ease; /* Smooth text color transition */
+}
+
+.shortDes button::before {
+  content: "";
+  position: absolute;
+  bottom: -150%; /* Start fully below the button */
+  left: 0;
+  width: 100%;
+  height: 150%;
+  border-radius: 50% 50% 0 0;
+  background-color: #000000; /* Hover background color */
+  z-index: -1; /* Places the pseudo-element behind the text */
+  transition: bottom 0.5s ease; /* Smooth bottom-to-top transition */
+}
+
+.shortDes button:hover {
+  color: white; /* Optional: Change text color on hover */
+}
+
+.shortDes button:hover::before {
+  bottom: 0; /* Moves the background from bottom to top */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .shortDes {
+      flex-direction: column; /* Stack content vertically for smaller screens */
+      margin: 5% 5%; /* Adjust margins for compact view */
+      text-align: center; /* Center-align text for mobile */
   }
-  
-  .shortDes button::before {
-    content: "";
-    position: absolute;
-    bottom: -150%; /* Start fully below the button */
-    left: 0;
-    width: 100%;
-    height: 150%;
-    border-radius: 50% 50% 0 0;
-    background-color: #000000; /* Hover background color */
-    z-index: -1; /* Places the pseudo-element behind the text */
-    transition: bottom 0.5s ease; /* Smooth bottom-to-top transition */
+
+  .shortDes img {
+      padding-right: 0; /* Remove right padding */
+      width: 60%; /* Increase image size for smaller screens */
+      margin-bottom: 5%; /* Add spacing below the image */
   }
-  
-  .shortDes button:hover {
-    color: white; /* Optional: Change text color on hover */
+
+  .shortDes-text {
+      width: 80%; /* Adjust width for smaller screens */
+      padding-left: 0; /* Remove left padding */
+      font-size: 4vw; /* Increase font size for readability */
   }
-  
-  .shortDes button:hover::before {
-    bottom: 0; /* Moves the background from bottom to top */
+
+  .shortDes button {
+      padding: 4vw 5vw; /* Adjust button padding */
+      font-size: 3vw; /* Increase button font size */
+      border-radius: 6vw; /* Make the button more circular */
   }
-  
+}
+
+@media screen and (max-width: 480px) {
+  .shortDes img {
+      z-index: -1; /* Further increase image size for small screens */
+  }
+
+  .shortDes-text {
+      width: 90%; /* Adjust text width for extra-small screens */
+      font-size: 4vw; /* Larger font size for better readability */
+  }
+
+  .shortDes button {
+      padding: 5vw 6vw; /* Larger padding for a touch-friendly button */
+      font-size: 4vw; /* Increase button font size */
+      border-radius: 8vw; /* Make the button more circular for small screens */
+      margin-bottom: 10vh;
+    }
+}

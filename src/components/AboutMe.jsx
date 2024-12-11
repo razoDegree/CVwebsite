@@ -5,8 +5,8 @@ function AboutMe() {
         <div className="about-me-container-black">
             <div className="about-me-container">
                 <div className="about-me-title">
-                    <h2 className="poppins-light-italic projects-text-top">Who</h2>
-                    <h2 className="poppins-medium projects-text-bottom">Am I?</h2>
+                    <h2 className="poppins-light-italic about-me-text-top">Who</h2>
+                    <h2 className="poppins-medium about-me-text-bottom">Am I?</h2>
                 </div>
 
                 <div className="about-me-paragraph">

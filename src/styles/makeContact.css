@@ -7,21 +7,19 @@
 .contact-title {
     padding-left: 10%;
     padding-top: 5%;
-    
     font: 4rem "Poppins";
     color: whitesmoke;
 }
 
-.contact-title img { 
+.contact-title img {
     padding: 0 1.25vw;
     width: 10vw;
     height: 5vw;
     border-radius: 40%;
     overflow: hidden;
     vertical-align: middle;
-  }
+}
 
-  
 .contact-text-top {
     margin-left: 2%;
 }
@@ -33,4 +31,65 @@
 
 .contact-container p {
     margin: 0 50px 20px 75px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding-bottom: 6vh; /* Increase padding for better spacing */
+    }
+
+    .contact-title {
+        padding-left: 5%; /* Reduce padding for compact layout */
+        padding-top: 8%; /* Adjust top padding */
+        font-size: 3rem; /* Reduce font size for tablets */
+    }
+
+    .contact-title img {
+        width: 15vw; /* Adjust image width for tablets */
+        height: 7.5vw; /* Adjust image height for tablets */
+    }
+
+    .contact-text-top {
+        margin-left: 4%; /* Increase margin for better alignment */
+    }
+
+    .contact-text-bottom {
+        margin-top: -20px; /* Adjust margin for compact spacing */
+        margin-bottom: 6vw; /* Increase bottom margin */
+    }
+
+    .contact-container p {
+        margin: 0 30px 20px 40px; /* Reduce paragraph margins for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding-bottom: 8vh; /* Increase padding for better spacing */
+    }
+
+    .contact-title {
+        margin-left: 3%; /* Further reduce margin */
+        padding: 10%; /* Add more top padding */
+        font: 2.25rem "Poppins"; /* Further reduce font size for phones */
+    }
+
+    .contact-title img {
+        width: 20vw; /* Further adjust image width */
+        height: 10vw; /* Further adjust image height */
+    }
+
+    .contact-text-top {
+        margin-left: 6%; /* Further increase margin */
+    }
+
+    .contact-text-bottom {
+        margin-top: -10px; /* Reduce negative margin */
+        margin-bottom: 8vw; /* Add more bottom margin */
+    }
+
+    .contact-container p {
+        margin: 0 20px 10px 30px; /* Further reduce paragraph margins */
+    }
 }
