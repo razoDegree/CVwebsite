@@ -11,7 +11,7 @@ function Video() {
                     className="cover-box"
                     initial={{ top: "0%" }} // Start fully covering the video
                     animate={{ top: "-100%" }} // Move up to reveal the video
-                    transition={{ duration: 2, ease: "easeInOut" }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
                 />
                 {/* Static video */}
                 <video className="static-video" autoPlay muted loop>

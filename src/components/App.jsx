@@ -7,7 +7,9 @@ import ShortDescription from './ShortDescription';
 import FloatingMemoji from './FloatingMemoji';
 import ProjectSection from './ProjectsSection';
 import CustomCursor from './CustomCursor';
-import AboutMe from './AboutMe';
+import WorkHistory from './workHistory';
+import Education from './Education';
+import Carousel from './Carousel';
 import MakeContact from './MakeContact';
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
           <Video />
           <ShortDescription />
           <ProjectSection />
-          <AboutMe />
+          <WorkHistory />
+          <Education />
+          <Carousel />
           <MakeContact />
         </SmoothScroll>
       </CustomCursor>

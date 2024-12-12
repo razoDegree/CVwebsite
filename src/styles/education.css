@@ -1,0 +1,111 @@
+.education-container-black {
+    background-color: white;
+}
+
+.education-container {
+    background-color: #210808;
+    border-radius: 100px 100px 0 0;
+    padding-bottom: 4vh;
+    color: rgb(255, 255, 255);
+}
+
+.education-title {
+    padding-left: 10%;
+    padding-top: 5%;
+    font: 4rem "Poppins";
+}
+
+.education-title img {
+    padding: 0 1.25vw;
+    width: 10vw;
+    height: 5vw;
+    border-radius: 40%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+.education-text-top {
+    margin-left: 2%;
+}
+
+.education-text-bottom {
+    margin-top: -40px;
+}
+
+.education-container p {
+    margin: 0 50px 20px 75px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .education-container {
+        border-radius: 50px 50px 0 0;
+        /* Adjust border-radius for smaller screens */
+        padding-bottom: 6vh;
+        /* Increase padding for better spacing */
+    }
+
+    .education-title {
+        padding-left: 5%;
+        /* Reduce left padding for compact layout */
+        padding-top: 8%;
+        /* Adjust top padding for better spacing */
+        font: 3rem "Poppins";
+        /* Reduce font size for smaller screens */
+    }
+
+    .education-title img {
+        width: 15vw;
+        /* Adjust image width for tablets */
+        height: 7.5vw;
+        /* Adjust image height for tablets */
+    }
+
+    .education-text-top {
+        margin-left: 4%;
+        /* Increase margin for better layout */
+    }
+
+    .education-text-bottom {
+        margin-top: -20px;
+        /* Adjust margin for compact spacing */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .education-container {
+        border-radius: 30px 30px 0 0;
+        /* Further reduce border-radius */
+        padding-bottom: 8vh;
+        /* Increase padding for better spacing */
+    }
+
+    .education-title {
+        padding-left: 3%;
+        /* Further reduce left padding */
+        padding-top: 10%;
+        /* Add more top padding */
+        font: 2.25rem "Poppins";
+        /* Further reduce font size for mobile */
+    }
+
+    .education-title img {
+        width: 20vw;
+        /* Further adjust image width */
+        height: 10vw;
+        /* Further adjust image height */
+    }
+
+    .education-text-top {
+        margin-left: 6%;
+        /* Further increase margin */
+    }
+
+    .education-text-bottom {
+        margin-top: 0;
+        /* Reduce negative margin for better readability */
+        margin-left: 6%;
+        margin-bottom: 6%;
+    }
+}

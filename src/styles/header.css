@@ -21,6 +21,7 @@ header .cv-button {
 }
 
 header button {
+  margin-right: 5px !important;
   all: unset;
   font-size: 1vw;
 }

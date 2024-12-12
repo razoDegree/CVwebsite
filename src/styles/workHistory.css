@@ -1,21 +1,21 @@
-.about-me-container-black {
+.work-history-container-black {
     background-color: #210808;
 }
 
-.about-me-container {
+.work-history-container {
     background-color: white;
     border-radius: 100px 100px 0 0;
     padding-bottom: 4vh;
 }
 
-.about-me-title {
+.work-history-title {
     padding-left: 10%;
     padding-top: 5%;
     font: 4rem "Poppins";
     color: rgb(0, 0, 0);
 }
 
-.about-me-title img { 
+.work-history-title img { 
     padding: 0 1.25vw;
     width: 10vw;
     height: 5vw;
@@ -25,67 +25,67 @@
   }
 
   
-.about-me-text-top {
+.work-history-text-top {
     margin-left: 2%;
 }
 
-.about-me-text-bottom {
+.work-history-text-bottom {
     margin-top: -40px;
 }
 
-.about-me-container p {
+.work-history-container p {
     margin: 0 50px 20px 75px;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .about-me-container {
+    .work-history-container {
         border-radius: 50px 50px 0 0; /* Adjust border-radius for smaller screens */
         padding-bottom: 6vh; /* Increase padding for better spacing */
     }
 
-    .about-me-title {
+    .work-history-title {
         padding-left: 5%; /* Reduce left padding for compact layout */
         padding-top: 8%; /* Adjust top padding for better spacing */
         font: 3rem "Poppins"; /* Reduce font size for smaller screens */
     }
 
-    .about-me-title img {
+    .work-history-title img {
         width: 15vw; /* Adjust image width for tablets */
         height: 7.5vw; /* Adjust image height for tablets */
     }
 
-    .about-me-text-top {
+    .work-history-text-top {
         margin-left: 4%; /* Increase margin for better layout */
     }
 
-    .about-me-text-bottom {
+    .work-history-text-bottom {
         margin-top: -20px; /* Adjust margin for compact spacing */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .about-me-container {
+    .work-history-container {
         border-radius: 30px 30px 0 0; /* Further reduce border-radius */
         padding-bottom: 8vh; /* Increase padding for better spacing */
     }
 
-    .about-me-title {
+    .work-history-title {
         padding-left: 3%; /* Further reduce left padding */
         padding-top: 10%; /* Add more top padding */
         font: 2.25rem "Poppins"; /* Further reduce font size for mobile */
     }
 
-    .about-me-title img {
+    .work-history-title img {
         width: 20vw; /* Further adjust image width */
         height: 10vw; /* Further adjust image height */
     }
 
-    .about-me-text-top {
+    .work-history-text-top {
         margin-left: 6%; /* Further increase margin */
     }
 
-    .about-me-text-bottom {
+    .work-history-text-bottom {
         margin-top: 0; /* Reduce negative margin for better readability */
         margin-left: 6%; 
         margin-bottom: 6%; 

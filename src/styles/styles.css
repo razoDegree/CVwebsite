@@ -3,7 +3,9 @@
 @import "./ProjectsSection.css"; 
 @import "./video.css"; 
 @import "./shortDescription.css"; 
-@import "./aboutMe.css";
+@import "./workHistory.css";
+@import "./education.css";
+@import "./carousel.css";
 @import "./makeContact.css";
 @import "./Strip.css";
 
