@@ -7,7 +7,7 @@ import ShortDescription from './ShortDescription';
 import FloatingMemoji from './FloatingMemoji';
 import ProjectSection from './ProjectsSection';
 import CustomCursor from './CustomCursor';
-import WorkHistory from './workHistory';
+import WorkHistory from './WorkHistory';
 import Education from './Education';
 import Carousel from './Carousel';
 import MakeContact from './MakeContact';
