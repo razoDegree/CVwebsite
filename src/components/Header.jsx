@@ -1,59 +1,42 @@
-import React, { Link, useEffect } from 'react';
-import gsap from 'gsap';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
-
+import React from "react";
+import { motion } from "framer-motion";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
 
 function Header() {
-    useEffect(() => {
+  const handleRedirectCV = () => {
+    window.open("https://www.google.com", "_blank"); // Redirect to CV link
+  };
 
+  const handleRedirectRAZO = () => {
+    window.location.href = "http://localhost:5173"; // Redirect to the original site
+  };
 
-        // GSAP animation for the button container
-        gsap.fromTo('.cv-button',
-            {
-                opacity: 0,  // Start with opacity 0 (invisible)
-                y: -50,      // Start from above the page
-            },
-            {
-                opacity: 1,   // End with opacity 1 (visible)
-                y: 0,         // Move to its normal position
-                duration: 2,   // Duration of 1.75 second
-                ease: "power2.out", // Smooth ease out
-            }
-        );
+  return (
+    <header>
+      {/* Header text (h1) with animation */}
+      <motion.h1
+        onClick={handleRedirectRAZO}
+        initial={{ opacity: 0, y: -50 }} // Start invisible and above
+        animate={{ opacity: 1, y: 0 }}  // End visible and at normal position
+        transition={{ duration: 2, ease: "easeOut" }} // Duration and easing
+      >
+        razo
+      </motion.h1>
 
-        // GSAP animation for the header (h1)
-        gsap.fromTo('h1',
-            {
-                opacity: 0,  // Start with opacity 0 (invisible)
-                y: -50,      // Start from above the page
-            },
-            {
-                opacity: 1,   // End with opacity 1 (visible)
-                y: 0,         // Move to its normal position
-                duration: 2,   // Duration of 1.75 second
-                ease: "power2.out", // Smooth ease out
-            }
-        );
-    }, []);
-
-    const handleRedirectCV = () => {
-        window.open("https://www.google.com", "_blank"); ; // Download CV link
-    };
-
-    const handleRedirectRAZO = () => {
-        window.location.href = "localhost:5173"; // Back to the original site
-    };
-
-    return (
-        <header>
-            <h1 data-textify onClick={handleRedirectRAZO}> razo</h1>
-            <div className='cv-button'>
-                <button onClick={handleRedirectCV} data-textify>cv</button>
-                <AttachFileIcon onClick={handleRedirectCV} />
-            </div>
-        </header>
-    );
+      {/* CV Button container */}
+      <motion.div
+        className="cv-button"
+        initial={{ opacity: 0, y: -50 }} // Start invisible and above
+        animate={{ opacity: 1, y: 0 }}  // End visible and at normal position
+        transition={{ duration: 2, ease: "easeOut" }} // Same animation
+      >
+        <button onClick={handleRedirectCV} data-textify>
+          cv
+        </button>
+        <AttachFileIcon onClick={handleRedirectCV} />
+      </motion.div>
+    </header>
+  );
 }
-
 
 export default Header;

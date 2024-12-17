@@ -1,3 +1,10 @@
+/* Wall Effect Wrapper */
+.hidden-wrapper {
+    overflow: hidden; /* Create the wall effect */
+    display: block; /* Ensures the text layout remains unchanged */
+}
+
+/* Projects Container */
 .projects-container {
     background-color: #161616;
     border-radius: 100px 100px 0 0;
@@ -19,67 +26,124 @@
     overflow: hidden;
     vertical-align: middle;
     margin-bottom: 10px;
-  }
+}
 
-  
 .projects-text-top {
     margin-left: 2%;
 }
 
 .projects-text-bottom {
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+
+/* Tablets and small desktops */
+@media screen and (max-width: 1024px) {
     .projects-container {
-        border-radius: 50px 50px 0 0; /* Adjust border-radius for smaller screens */
-        padding-bottom: 6vh; /* Increase padding for better spacing */
+        border-radius: 60px 60px 0 0;
+        padding-bottom: 5vh;
     }
 
     .projects-title {
-        padding-left: 5%; /* Reduce left padding for compact layout */
-        padding-top: 8%; /* Adjust top padding for better spacing */
-        font: 3rem "Poppins"; /* Reduce font size for smaller screens */
+        padding-left: 8%;
+        padding-top: 6%;
+        font: 3.5rem "Poppins";
     }
 
     .projects-title img {
-        width: 15vw; /* Adjust image width for tablets */
-        height: 7.5vw; /* Adjust image height for tablets */
+        width: 12vw;
+        height: 6vw;
     }
 
     .projects-text-top {
-        margin-left: 4%; /* Increase margin for better layout */
+        margin-left: 3%;
     }
 
     .projects-text-bottom {
-        margin-top: -20px; /* Adjust margin for compact spacing */
+        margin-top: -20px;
     }
 }
 
-@media screen and (max-width: 480px) {
+/* Tablets and large phones */
+@media screen and (max-width: 768px) {
     .projects-container {
-        border-radius: 30px 30px 0 0; /* Further reduce border-radius */
-        padding-bottom: 8vh; /* Increase padding for better spacing */
+        border-radius: 50px 50px 0 0;
+        padding-bottom: 6vh;
     }
 
     .projects-title {
-        padding-left: 3%; /* Further reduce left padding */
-        padding-top: 10%; /* Add more top padding */
-        font: 2.25rem "Poppins"; /* Further reduce font size for mobile */
+        padding-left: 5%;
+        padding-top: 8%;
+        font: 3rem "Poppins";
+        text-align: center;
     }
 
     .projects-title img {
-        width: 20vw; /* Further adjust image width */
-        height: 13vw; /* Further adjust image height */
+        width: 15vw;
+        height: 7.5vw;
+    }
+
+    .projects-text-top {
+        margin-left: 0; /* Center align on smaller screens */
+    }
+
+    .projects-text-bottom {
+        margin-top: -10px;
+        text-align: center;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .projects-container {
+        border-radius: 30px 30px 0 0;
+        padding-bottom: 8vh;
+    }
+
+    .projects-title {
+        padding-left: 3%;
+        padding-top: 10%;
+        font: 2.25rem "Poppins";
+        text-align: center;
+    }
+
+    .projects-title img {
+        width: 20vw;
+        height: 13vw;
         margin-bottom: 5px;
     }
 
     .projects-text-top {
-        margin-left: 6%; /* Further increase margin */
+        margin-left: 0; /* Center align */
     }
 
     .projects-text-bottom {
-        margin-top: -10px; /* Reduce negative margin for better readability */
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+/* Very small devices (less than 360px) */
+@media screen and (max-width: 360px) {
+    .projects-container {
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 10vh;
+    }
+
+    .projects-title {
+        font: 2rem "Poppins";
+        padding-top: 12%;
+    }
+
+    .projects-title img {
+        width: 25vw;
+        height: 15vw;
+    }
+
+    .projects-text-top, 
+    .projects-text-bottom {
+        margin-left: 0;
+        text-align: center;
     }
 }

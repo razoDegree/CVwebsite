@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import styled from 'styled-components';
+import React from "react";
+import { motion } from "framer-motion";
+import styled from "styled-components";
 import memoji from "../assets/memoji.gif";
-import gsap from 'gsap';
 
-// Styled component for CircleContainer with responsive styles
-const CircleContainer = styled.div`
+// Styled component for the CircleContainer with responsive styles
+const CircleContainer = styled(motion.div)` /* Use motion.div for animations */
   width: 5vw;
   height: 5vw;
   border-radius: 50%;
@@ -17,9 +17,6 @@ const CircleContainer = styled.div`
   text-align: center;
   background-color: white;
   cursor: pointer;
-  opacity: 0; /* Start with invisible */
-  transform: scale(0); /* Start with scaled-down */
-  visibility: hidden; /* Hide initially */
 
   /* Responsive design for smaller screens */
   @media screen and (max-width: 768px) {
@@ -37,13 +34,14 @@ const CircleContainer = styled.div`
   }
 `;
 
+// Memoji component to display the animated gif
 const Memoji = () => (
   <div
     style={{
-      position: 'absolute',
-      top: '51%',
-      left: '35%',
-      transform: 'translate(-50%, -50%)',
+      position: "absolute",
+      top: "51%",
+      left: "35%",
+      transform: "translate(-50%, -50%)",
     }}
   >
     <img width="150%" height="150%" src={memoji} alt="memoji" />
@@ -51,27 +49,21 @@ const Memoji = () => (
 );
 
 const FloatingMemoji = () => {
-  const circleRef = useRef(null); // Reference for CircleContainer
-
-  useEffect(() => {
-    if (circleRef.current) {
-      // GSAP animation for the popup effect
-      gsap.to(circleRef.current, {
-        opacity: 1, // Make it visible
-        scale: 1, // Scale it to full size
-        visibility: 'visible', // Ensure it's visible
-        duration: 2, // Duration of the animation
-      });
-    }
-  }, []); // Empty dependency array ensures this runs once on mount
-
+  // Function to handle redirect to LinkedIn
   const handleRedirect = () => {
-    window.open('https://www.linkedin.com/in/itsrazo', '_blank');
+    window.open("https://www.linkedin.com/in/itsrazo", "_blank");
   };
 
   return (
-    <CircleContainer ref={circleRef} className="magnetic" onClick={handleRedirect}>
-      <Memoji  />
+    // Animate CircleContainer using Framer Motion
+    <CircleContainer
+      initial={{ opacity: 0, scale: 0, visibility: "hidden" }} // Initial state
+      animate={{ opacity: 1, scale: 1, visibility: "visible" }} // Animation target
+      transition={{ duration: 2, ease: "easeOut" }} // Animation settings
+      className="magnetic" // Existing class
+      onClick={handleRedirect} // Click handler for redirection
+    >
+      <Memoji />
     </CircleContainer>
   );
 };

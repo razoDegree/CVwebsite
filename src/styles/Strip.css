@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #161616;
+    background-color: #030303;
     color: white;
     padding: 1rem;
     font-family: Arial, sans-serif;
@@ -110,11 +110,6 @@
 @media screen and (max-width: 480px) {
     .strip-container {
         padding: 1rem; /* Reduce padding for compact layout */
-    }
-
-    .strip-content {
-        /* flex-direction: column; Ensure vertical stacking */
-        /* text-align: center; Align all text centrally */
     }
 
     .social-media-name {

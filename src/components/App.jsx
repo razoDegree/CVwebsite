@@ -11,7 +11,6 @@ import WorkHistory from './workHistory';
 import Education from './Education';
 import Carousel from './Carousel';
 import MakeContact from './MakeContact';
-import MagneticButton from './MagneticButton';
 
 function App() {
 
@@ -29,7 +28,6 @@ function App() {
           <Education />
           <Carousel />
           <MakeContact />
-          <MagneticButton />
         </SmoothScroll>
       </CustomCursor>
     </>

@@ -1,7 +1,27 @@
-.curousel {
-    height: 20vw;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+/* Container for the carousel */
+.carousel-container {
+    width: 100vw; /* Full width */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    background-color: #fff; /* Optional background */
+  }
+  
+  /* Track for scrolling items */
+  .carousel-track {
+    display: flex; /* Align items in a row */
+    width: calc(200%); /* Double width for seamless scrolling */
+  }
+  
+  /* Individual item */
+  .carousel-item {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 10vw; /* Set fixed width */
+    margin: 0 1vw; /* Optional spacing */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
