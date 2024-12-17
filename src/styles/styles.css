@@ -11,6 +11,7 @@
 
 /* Cursor */
 @import "../../node_modules/mouse-follower/dist/mouse-follower.min.css"; 
+
 @import "./customCursor.css";
 
 .-lg { &:before { transform: scale(1.1) } }

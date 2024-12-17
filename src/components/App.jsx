@@ -1,6 +1,6 @@
 import React from 'react';
 import SmoothScroll from "./SmoothScroll";
-import Header from './header';
+import Header from './Header';
 import LandingContiner from './LandingContiner';
 import Video from './Video';
 import ShortDescription from './ShortDescription';
@@ -11,6 +11,7 @@ import WorkHistory from './workHistory';
 import Education from './Education';
 import Carousel from './Carousel';
 import MakeContact from './MakeContact';
+import MagneticButton from './MagneticButton';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Education />
           <Carousel />
           <MakeContact />
+          <MagneticButton />
         </SmoothScroll>
       </CustomCursor>
     </>

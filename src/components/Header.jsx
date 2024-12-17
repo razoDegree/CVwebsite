@@ -16,7 +16,7 @@ function Header() {
             {
                 opacity: 1,   // End with opacity 1 (visible)
                 y: 0,         // Move to its normal position
-                duration: 1,   // Duration of 1 second
+                duration: 2,   // Duration of 1.75 second
                 ease: "power2.out", // Smooth ease out
             }
         );
@@ -30,7 +30,7 @@ function Header() {
             {
                 opacity: 1,   // End with opacity 1 (visible)
                 y: 0,         // Move to its normal position
-                duration: 1,   // Duration of 1 second
+                duration: 2,   // Duration of 1.75 second
                 ease: "power2.out", // Smooth ease out
             }
         );

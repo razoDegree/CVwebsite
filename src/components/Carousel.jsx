@@ -26,7 +26,7 @@ function Carousel() {
         if (isMounted && carouselElementRef.current) {
             const carousel = carouselElementRef.current;
             carouselAnimation.start({
-                x: -carousel.scrollWidth - 10,
+                x: -carousel.scrollWidth / 2,
                 transition: {
                     ease: 'linear',
                     repeat: Infinity,

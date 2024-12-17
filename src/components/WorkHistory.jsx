@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 function WorkHistory() {
     return (
-        <div className="work-history-container-black">
+        <div className="work-history-container-black" id="work">
             <div className="work-history-container">
                 <div className="work-history-title">
                     <h2 className="poppins-light-italic work-history-text-top">Work</h2>

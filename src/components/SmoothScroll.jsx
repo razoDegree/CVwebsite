@@ -1,25 +1,32 @@
-import React, { useEffect, useRef } from "react";
+import React, { createContext, useEffect, useRef } from "react";
 import Scrollbar from "smooth-scrollbar";
 
+// יצירת קונטקסט כדי לשתף את ה-scrollbar בכל האפליקציה
+export const ScrollbarContext = createContext();
+
 const SmoothScroll = ({ children }) => {
-  const scrollArea = useRef(null); // This points to the box (the div).
+  const scrollArea = useRef(null);
+  const scrollbarRef = useRef(null);
 
   useEffect(() => {
     if (scrollArea.current) {
-      // Make the box scroll smoothly.
-      const scrollbar = Scrollbar.init(scrollArea.current, {
-        damping: 0.02, // Adjust this to control how smooth it feels.
+      scrollbarRef.current = Scrollbar.init(scrollArea.current, {
+        damping: 0.03, 
+        alwaysShowTracks: false, 
       });
 
-      // Clean up when the component is removed.
-      return () => scrollbar.destroy();
+      return () => {
+        if (scrollbarRef.current) scrollbarRef.current.destroy();
+      };
     }
   }, []);
 
   return (
-    <div ref={scrollArea} style={{ height: "100vh", overflow: "hidden" }}>
-      {children}
-    </div>
+    <ScrollbarContext.Provider value={scrollbarRef}>
+      <div ref={scrollArea} style={{ height: "100vh", overflow: "hidden" }}>
+        {children}
+      </div>
+    </ScrollbarContext.Provider>
   );
 };
 

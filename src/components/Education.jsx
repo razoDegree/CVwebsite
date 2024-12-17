@@ -2,7 +2,7 @@ import React from "react";
 
 function Education() {
     return (
-        <div className="education-container-black">
+        <div className="education-container-black" data-cursor="-white">
             <div className="education-container">
                 <div className="education-title">
                     <h2 className="poppins-light-italic education-text-top">Certificates</h2>

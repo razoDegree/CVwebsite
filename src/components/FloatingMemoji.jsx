@@ -60,7 +60,7 @@ const FloatingMemoji = () => {
         opacity: 1, // Make it visible
         scale: 1, // Scale it to full size
         visibility: 'visible', // Ensure it's visible
-        duration: 1, // Duration of the animation
+        duration: 2, // Duration of the animation
       });
     }
   }, []); // Empty dependency array ensures this runs once on mount
@@ -70,8 +70,8 @@ const FloatingMemoji = () => {
   };
 
   return (
-    <CircleContainer ref={circleRef} onClick={handleRedirect}>
-      <Memoji />
+    <CircleContainer ref={circleRef} className="magnetic" onClick={handleRedirect}>
+      <Memoji  />
     </CircleContainer>
   );
 };

@@ -1,5 +1,5 @@
 .work-history-container-black {
-    background-color: #210808;
+    background-color: #161616;
 }
 
 .work-history-container {
@@ -91,3 +91,8 @@
         margin-bottom: 6%; 
     }
 }
+
+#work {
+    position: relative;
+    scroll-margin-top: 100px; /* Adjust for fixed headers */
+  }
