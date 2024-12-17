@@ -15,15 +15,24 @@
     font: 4rem "Poppins";
 }
 
-.education-title img {
-    padding: 0 1.25vw;
-    width: 10vw;
-    height: 5vw;
-    border-radius: 40%;
-    overflow: hidden;
-    vertical-align: middle;
+.education-section {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-top: 2%;
 }
 
+.education-section li {
+    padding-bottom: 10px;
+}
+
+.education-line {
+    margin-right: 10%;
+    width: 3px;
+    height: 50vh;
+    background-color: rgb(171, 243, 56);
+    border-radius: 1px white solid;
+}
 
 .education-text-top {
     margin-left: 2%;

@@ -15,15 +15,20 @@
     color: rgb(0, 0, 0);
 }
 
-.work-history-title img { 
-    padding: 0 1.25vw;
-    width: 10vw;
-    height: 5vw;
-    border-radius: 40%;
-    overflow: hidden;
-    vertical-align: middle;
-  }
+.work-history-section {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-top: 2%;
+}
 
+.work-history-line {
+    margin-right: 10%;
+    width: 3px;
+    height: 50vh;
+    background-color: rgb(171, 243, 56);
+    border-radius: 1px white solid;
+}
   
 .work-history-text-top {
     margin-left: 2%;
