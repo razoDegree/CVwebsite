@@ -1,120 +1,107 @@
+/* General Background */
 .education-container-black {
     background-color: white;
-}
-
-.education-container {
+  }
+  
+  .education-container {
     background-color: #161616;
     border-radius: 100px 100px 0 0;
     padding-bottom: 4vh;
     color: rgb(255, 255, 255);
-}
-
-.education-title {
+    position: relative; /* Parent container for positioning */
+  }
+  
+  .education-title {
     padding-left: 10%;
     padding-top: 5%;
-    font: 4rem "Poppins";
-}
-
-.education-section {
+    font: 3.5rem "Poppins"; /* Slightly reduced font size */
+    position: relative;
+    z-index: 2; /* Ensure titles are above the line */
+  }
+  
+  .education-section {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 15%;
     padding-top: 2%;
-}
-
-.education-section li {
-    padding-bottom: 10px;
-}
-
-.education-line {
-    margin-right: 10%;
+  }
+  
+  .education-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%; /* Adjust alignment */
     width: 3px;
-    height: 50vh;
     background-color: rgb(171, 243, 56);
-    border-radius: 1px white solid;
-}
-
-.education-text-top {
-    margin-left: 2%;
-}
-
-.education-text-bottom {
-    margin-top: -40px;
-}
-
-.education-container p {
-    margin: 0 50px 20px 75px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+    z-index: 1; /* Ensure the line is behind the text */
+  }
+  
+  .education-section li,
+  .education-section p {
+    position: relative;
+    z-index: 2; /* Keep text above the line */
+    margin-bottom: 20px; /* Spacing between items */
+  }
+  
+  .education-container p {
+    font-size: 1rem; /* Base font size */
+    margin: 0;
+    padding-left: 1rem; /* Indent text slightly */
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablet View */
+  @media screen and (max-width: 768px) {
     .education-container {
-        border-radius: 50px 50px 0 0;
-        /* Adjust border-radius for smaller screens */
-        padding-bottom: 6vh;
-        /* Increase padding for better spacing */
+      border-radius: 50px 50px 0 0;
+      padding: 4vh 5%;
     }
-
+  
     .education-title {
-        padding-left: 5%;
-        /* Reduce left padding for compact layout */
-        padding-top: 8%;
-        /* Adjust top padding for better spacing */
-        font: 3rem "Poppins";
-        /* Reduce font size for smaller screens */
+      padding-left: 5%;
+      font: 2.5rem "Poppins";
+      text-align: center;
     }
-
-    .education-title img {
-        width: 15vw;
-        /* Adjust image width for tablets */
-        height: 7.5vw;
-        /* Adjust image height for tablets */
+  
+    .education-line {
+      left: 5%; /* Adjust line position for smaller screens */
     }
-
-    .education-text-top {
-        margin-left: 4%;
-        /* Increase margin for better layout */
+  
+    .education-section {
+      padding-left: 10%;
     }
-
-    .education-text-bottom {
-        margin-top: -20px;
-        /* Adjust margin for compact spacing */
+  
+    .education-container p {
+      font-size: 0.9rem; /* Reduce text size */
     }
-}
-
-@media screen and (max-width: 480px) {
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 480px) {
     .education-container {
-        border-radius: 30px 30px 0 0;
-        /* Further reduce border-radius */
-        padding-bottom: 8vh;
-        /* Increase padding for better spacing */
+      border-radius: 30px 30px 0 0;
+      padding: 3vh 3%;
     }
-
+  
     .education-title {
-        padding-left: 3%;
-        /* Further reduce left padding */
-        padding-top: 10%;
-        /* Add more top padding */
-        font: 2.25rem "Poppins";
-        /* Further reduce font size for mobile */
+      font: 2rem "Poppins";
+      text-align: center;
     }
-
-    .education-title img {
-        width: 20vw;
-        /* Further adjust image width */
-        height: 10vw;
-        /* Further adjust image height */
+  
+    .education-line {
+      left: 3%; /* Position the line closer to text */
     }
-
-    .education-text-top {
-        margin-left: 6%;
-        /* Further increase margin */
+  
+    .education-section {
+      padding-left: 5%;
     }
-
-    .education-text-bottom {
-        margin-top: 0;
-        /* Reduce negative margin for better readability */
-        margin-left: 6%;
-        margin-bottom: 6%;
+  
+    .education-container p {
+      font-size: 0.85rem;
+      padding-left: 0;
     }
-}
+  }
+  

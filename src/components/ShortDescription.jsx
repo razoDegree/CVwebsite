@@ -24,13 +24,13 @@ function ShortDescription() {
         alt="waving hand"
         initial={{ scale: 0.5, opacity: 0 }}
         animate={inView ? { scale: 1, opacity: 1 } : {}}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" , delay: 0.4}}
       />
       <div className="shortDes-text">
         <motion.p
           initial={{ opacity: 0, y: "50px" }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
         >
           Hi, I'm Raz, also known as Razo. I'm a third-year Computer Science and
           Entrepreneurship student with a passion for innovation, problem-solving,

@@ -1,95 +1,112 @@
+/* General Contact Section */
 .contact-container {
     background-color: #030303;
-    /* border-radius: 100px 100px 0 0; */
-    padding-bottom: 4vh;
+    padding: 4vh 8%; /* Add horizontal padding for consistency */
 }
 
 .contact-title {
-    padding-left: 10%;
-    padding-top: 5%;
-    font: 4rem "Poppins";
+    font: 3.5rem "Poppins"; /* Adjust base font size */
     color: whitesmoke;
+    padding-top: 5%;
+    text-align: center; /* Center title for uniformity */
+    position: relative;
 }
 
 .contact-title img {
-    padding: 0 1.25vw;
-    width: 10vw;
-    height: 5vw;
+    width: 8vw;
+    height: 4vw;
     border-radius: 40%;
     overflow: hidden;
     vertical-align: middle;
+    margin: 0 1.25vw; /* Consistent spacing */
 }
 
 .contact-text-top {
-    margin-left: 2%;
+    font-style: italic;
+    margin-bottom: 0.5rem;
 }
 
 .contact-text-bottom {
-    margin-top: -40px;
-    margin-bottom: 4vw;
+    font-weight: bold;
+    margin-top: -10px; /* Fine-tune spacing */
+    margin-bottom: 2rem;
 }
 
 .contact-container p {
-    margin: 0 50px 20px 75px;
+    margin: 0 2rem; /* Uniform margin */
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability */
+    color: #ddd; /* Light gray for better contrast */
 }
 
 /* Responsive Design */
+
+/* Tablets and Small Desktops */
 @media screen and (max-width: 768px) {
     .contact-container {
-        padding-bottom: 6vh; /* Increase padding for better spacing */
+        padding: 6vh 5%;
     }
 
     .contact-title {
-        padding-left: 5%; /* Reduce padding for compact layout */
-        padding-top: 8%; /* Adjust top padding */
-        font-size: 3rem; /* Reduce font size for tablets */
+        font-size: 2.8rem; /* Adjust title size */
+        padding-top: 6%;
     }
 
     .contact-title img {
-        width: 15vw; /* Adjust image width for tablets */
-        height: 7.5vw; /* Adjust image height for tablets */
-    }
-
-    .contact-text-top {
-        margin-left: 4%; /* Increase margin for better alignment */
-    }
-
-    .contact-text-bottom {
-        margin-top: -20px; /* Adjust margin for compact spacing */
-        margin-bottom: 6vw; /* Increase bottom margin */
+        width: 12vw; /* Adjust image width */
+        height: 6vw;
     }
 
     .contact-container p {
-        margin: 0 30px 20px 40px; /* Reduce paragraph margins for smaller screens */
+        font-size: 0.9rem; /* Smaller font for tablets */
+        margin: 0 1.5rem; /* Tighten paragraph spacing */
+    }
+
+    .contact-text-bottom {
+        margin-bottom: 1.5rem;
     }
 }
 
+/* Mobile Devices */
 @media screen and (max-width: 480px) {
     .contact-container {
-        padding-bottom: 8vh; /* Increase padding for better spacing */
+        padding: 8vh 4%;
     }
 
     .contact-title {
-        margin-left: 3%; /* Further reduce margin */
-        padding: 10%; /* Add more top padding */
-        font: 2.25rem "Poppins"; /* Further reduce font size for phones */
+        font-size: 2rem; /* Smaller title size */
+        padding-top: 8%;
+        text-align: center;
     }
 
     .contact-title img {
-        width: 20vw; /* Further adjust image width */
-        height: 10vw; /* Further adjust image height */
-    }
-
-    .contact-text-top {
-        margin-left: 6%; /* Further increase margin */
+        width: 18vw; /* Adjust image for small screens */
+        height: 9vw;
     }
 
     .contact-text-bottom {
-        margin-top: -10px; /* Reduce negative margin */
-        margin-bottom: 8vw; /* Add more bottom margin */
+        margin-bottom: 1rem; /* Adjust spacing */
     }
 
     .contact-container p {
-        margin: 0 20px 10px 30px; /* Further reduce paragraph margins */
+        font-size: 0.85rem;
+        margin: 0 1rem; /* Further reduce margins */
+    }
+}
+
+/* Very Small Devices (360px and below) */
+@media screen and (max-width: 360px) {
+    .contact-title {
+        font-size: 1.75rem; /* Final title adjustment */
+    }
+
+    .contact-title img {
+        width: 20vw;
+        height: 10vw;
+    }
+
+    .contact-container p {
+        font-size: 0.8rem;
+        margin: 0 0.5rem; /* Minimal margin */
     }
 }

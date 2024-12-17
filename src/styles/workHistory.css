@@ -1,3 +1,4 @@
+/* Main Container Styles */
 .work-history-container-black {
     background-color: #161616;
 }
@@ -16,88 +17,96 @@
 }
 
 .work-history-section {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 15%;
     padding-top: 2%;
 }
 
 .work-history-line {
-    margin-right: 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    /* Adjust alignment */
     width: 3px;
-    height: 50vh;
     background-color: rgb(171, 243, 56);
-    border-radius: 1px white solid;
-}
-  
-.work-history-text-top {
-    margin-left: 2%;
+    z-index: 1;
+    /* Ensure the line is behind the text */
 }
 
-.work-history-text-bottom {
-    margin-top: -40px;
+.work-history-section li,
+.work-history-section p {
+    position: relative;
+    z-index: 2;
+    /* Keep text above the line */
+    margin-bottom: 20px;
+    /* Spacing between items */
 }
 
 .work-history-container p {
-    margin: 0 50px 20px 75px;
+    font-size: 1rem;
+    /* Base font size */
+    margin: 0;
+    padding-left: 1rem;
+    /* Indent text slightly */
 }
 
 /* Responsive Design */
+
+/* Tablet View */
 @media screen and (max-width: 768px) {
     .work-history-container {
-        border-radius: 50px 50px 0 0; /* Adjust border-radius for smaller screens */
-        padding-bottom: 6vh; /* Increase padding for better spacing */
+        border-radius: 50px 50px 0 0;
+        padding: 4vh 5%;
     }
 
     .work-history-title {
-        padding-left: 5%; /* Reduce left padding for compact layout */
-        padding-top: 8%; /* Adjust top padding for better spacing */
-        font: 3rem "Poppins"; /* Reduce font size for smaller screens */
+        padding-left: 5%;
+        font: 2.5rem "Poppins";
+        text-align: center;
     }
 
-    .work-history-title img {
-        width: 15vw; /* Adjust image width for tablets */
-        height: 7.5vw; /* Adjust image height for tablets */
+    .work-history-line {
+        left: 5%;
+        /* Adjust line position for smaller screens */
     }
 
-    .work-history-text-top {
-        margin-left: 4%; /* Increase margin for better layout */
+    .work-history-section {
+        padding-left: 10%;
     }
 
-    .work-history-text-bottom {
-        margin-top: -20px; /* Adjust margin for compact spacing */
+    .work-history-container p {
+        font-size: 0.9rem;
+        /* Reduce text size */
     }
 }
 
+/* Mobile View */
 @media screen and (max-width: 480px) {
     .work-history-container {
-        border-radius: 30px 30px 0 0; /* Further reduce border-radius */
-        padding-bottom: 8vh; /* Increase padding for better spacing */
+        border-radius: 30px 30px 0 0;
+        padding: 3vh 3%;
     }
 
     .work-history-title {
-        padding-left: 3%; /* Further reduce left padding */
-        padding-top: 10%; /* Add more top padding */
-        font: 2.25rem "Poppins"; /* Further reduce font size for mobile */
+        font: 2rem "Poppins";
+        text-align: center;
     }
 
-    .work-history-title img {
-        width: 20vw; /* Further adjust image width */
-        height: 10vw; /* Further adjust image height */
+    .work-history-line {
+        left: 3%;
+        /* Position the line closer to text */
     }
 
-    .work-history-text-top {
-        margin-left: 6%; /* Further increase margin */
+    .work-history-section {
+        padding-left: 5%;
     }
 
-    .work-history-text-bottom {
-        margin-top: 0; /* Reduce negative margin for better readability */
-        margin-left: 6%; 
-        margin-bottom: 6%; 
+    .work-history-container p {
+        font-size: 0.85rem;
+        padding-left: 0;
     }
 }
-
-#work {
-    position: relative;
-    scroll-margin-top: 100px; /* Adjust for fixed headers */
-  }
