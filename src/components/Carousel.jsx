@@ -2,17 +2,27 @@ import React from "react";
 import { motion } from "framer-motion";
 import Pic from "./Pic";
 
+import c4 from "../assets/curosel/c--4.svg";
+import c1 from "../assets/curosel/c-1.svg";
+import css from "../assets/curosel/css-3.svg";
+import git from "../assets/curosel/git-icon.svg";
+import java from "../assets/curosel/java-icon.svg";
+import javascript from "../assets/curosel/logo-javascript.svg";
+import nodejs from "../assets/curosel/nodejs-1.svg";
+import python from "../assets/curosel/python-icon.svg";
+import react from "../assets/curosel/react-2.svg";
+
 // Array of images
 const languegs = [
-  "../src/assets/curosel/c--4.svg",
-  "../src/assets/curosel/c-1.svg",
-  "../src/assets/curosel/css-3.svg",
-  "../src/assets/curosel/git-icon.svg",
-  "../src/assets/curosel/java-icon.svg",
-  "../src/assets/curosel/logo-javascript.svg",
-  "../src/assets/curosel/nodejs-1.svg",
-  "../src/assets/curosel/python-icon.svg",
-  "../src/assets/curosel/react-2.svg",
+  c4,
+  c1,
+  css,
+  git,
+  java,
+  javascript,
+  nodejs,
+  python,
+  react,
 ];
 
 function Carousel() {
