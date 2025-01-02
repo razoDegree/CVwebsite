@@ -10,8 +10,8 @@ function MakeContact() {
                 <h2 className="poppins-medium contact-text-bottom">& Let's Talk</h2>
             </div>
             <div className="contact-paragraph">
-                <Strip socialMedia="GitHub" link="https://www.github.com" />
-                <Strip socialMedia="Mail" link="https://www.gmail.com" />
+                <Strip socialMedia="GitHub" link="https://www.github.com/RazoDegree" />
+                <Strip socialMedia="Mail" link="mailto:degreerazo@gmail.com" />
                 <Strip socialMedia="Linkedin" link="https://www.linkedin.com/in/itsrazo" />
             </div>
         </div>

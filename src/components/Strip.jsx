@@ -4,8 +4,12 @@ const Strip = ({ socialMedia, link }) => {
     const [hover, setHover] = useState(false);
 
     const handleRedirect = () => {
-        window.open(link, "_blank");
-    }
+        if (link.startsWith("mailto:")) {
+            window.location.href = link;
+        } else {
+            window.open(link, "_blank");
+        }
+    };
 
     return (
         <div>
@@ -16,8 +20,7 @@ const Strip = ({ socialMedia, link }) => {
                 onMouseLeave={() => setHover(false)}
                 onClick={handleRedirect}
             >
-
-                <a target="_blank" rel="noopener noreferrer" className="strip-content">
+                <a className="strip-content">
                     <span className="social-media-name">{socialMedia}</span>
                     <span className="arrow">&#8599;</span>
                 </a>
