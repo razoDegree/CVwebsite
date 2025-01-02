@@ -22,14 +22,14 @@ const Strip = ({ socialMedia, link }) => {
             >
                 <a className="strip-content">
                     <span className="social-media-name">{socialMedia}</span>
-                    <span className="arrow">↗</span>
+                    <span className="arrow">&#8599;</span>
                 </a>
                 {hover && (
                     <div className="moving-text">
                         {[...Array(15)].map((_, i) => (
                             <div key={i} className="scrolling-item">
                                 <span className="scrolling-text">{socialMedia}</span>
-                                <span className="arrow">↗</span>
+                                <span className="arrow">&#8599;</span>
                             </div>
                         ))}
                     </div>

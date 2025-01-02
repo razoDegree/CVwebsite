@@ -46,7 +46,7 @@ function ProjectsSection() {
         img={CVsite}
         alt="CV website photo"
         name="CV Website"
-        description="An online portfolio showcasing user skills, achievements, etc."
+        description="A personal online portfolio showcasing user professional background, skills, and achievements."
         link="https://github.com/razoDegree/CVwebsite"
       />
       {/* <Project
