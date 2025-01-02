@@ -132,3 +132,13 @@
     transition-duration: 0.4s, 0.4s;
     transition-delay: 0s, 0s;
 }
+
+@media (max-width: 768px) { /* Adjust the max-width value as needed for your breakpoints */
+    .mf-cursor,
+    .mf-cursor:before,
+    .mf-cursor-text,
+    .mf-cursor-media,
+    .mf-cursor-media-box {
+        display: none !important; /* Hides the cursor styles */
+    }
+}
