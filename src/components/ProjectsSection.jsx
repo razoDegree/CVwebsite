@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Project from "./Project.jsx";
+import CVsite from "../assets/projects/CVsite.png";
 import austria from "../assets/projects/austria.jpg";
 import uk from "../assets/projects/uk.jpg";
 import papers from "../assets/papers.gif";
@@ -42,26 +43,26 @@ function ProjectsSection() {
 
       {/* Project Components */}
       <Project
-        img={austria}
-        alt="austria"
-        name="Punto Pago"
-        description="The First Super-App in Latin America"
-        link="https://www.github1.com"
+        img={CVsite}
+        alt="CV website photo"
+        name="CV Website"
+        description="A personal online portfolio showcasing user professional background, skills, and achievements."
+        link="https://github.com/razoDegree/CVwebsite"
       />
-      <Project
+      {/* <Project
         img={uk}
         alt="uk"
         name="Riyadh"
         description="Official website of Riyadh, Saudi"
         link="https://www.github2.com"
-      />
-      <Project
+      /> */}
+      {/* <Project
         img={austria}
         alt="austria"
         name="Punto Pago"
         description="The First Super-App in Latin America"
         link="https://www.github3.com"
-      />
+      /> */}
     </div>
   );
 }
