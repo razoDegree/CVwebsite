@@ -38,6 +38,9 @@
   margin-bottom: 4vh;
   font-size: 1vw;
   color: #fffff7;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
 }
 
 /* Responsive Design */
