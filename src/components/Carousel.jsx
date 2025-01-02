@@ -4,15 +4,15 @@ import Pic from "./Pic";
 
 // Array of images
 const languegs = [
-  "./src/assets/curosel/c--4.svg",
-  "./src/assets/curosel/c-1.svg",
-  "./src/assets/curosel/css-3.svg",
-  "./src/assets/curosel/git-icon.svg",
-  "./src/assets/curosel/java-icon.svg",
-  "./src/assets/curosel/logo-javascript.svg",
-  "./src/assets/curosel/nodejs-1.svg",
-  "./src/assets/curosel/python-icon.svg",
-  "./src/assets/curosel/react-2.svg",
+  "../assets/curosel/c--4.svg",
+  "../assets/curosel/c-1.svg",
+  "../assets/curosel/css-3.svg",
+  "../assets/curosel/git-icon.svg",
+  "../assets/curosel/java-icon.svg",
+  "../assets/curosel/logo-javascript.svg",
+  "../assets/curosel/nodejs-1.svg",
+  "../assets/curosel/python-icon.svg",
+  "../assets/curosel/react-2.svg",
 ];
 
 function Carousel() {
