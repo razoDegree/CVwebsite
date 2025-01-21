@@ -7,7 +7,6 @@ function Education() {
     "- Math (5 Units): 91",
     "- English (5 Units): 91",
     "- Computer Science (5 Units): 95",
-    "- Physics (5 Units): 87",
   ];
 
   const titleVariants = {
@@ -117,13 +116,32 @@ function Education() {
               />
             </motion.div>
             <br />
+            
+            <motion.div variants={cardVariants}>
+              <InfoCard
+                name="UI/UX Course as part of the RUNI Tools Program"
+                additionalName=", Reichman University"
+                years="Apr 2022 - Jun 2023"
+              />
+            </motion.div>
+            <br />
 
             <motion.div variants={cardVariants}>
               <InfoCard
-                name="Double Major in Computer Science and Entrepreneurship"
+                name="Double Major in Computer Science and Entrepreneurship B.Sc."
                 additionalName=", Reichman University"
                 years="Nov 2022 - Present (3rd year)"
                 content="GPA: 91"
+              />
+            </motion.div>
+            <br />
+
+            <motion.div variants={cardVariants}>
+              <InfoCard
+                name="Exchange Student for Computer Science (Mixed B.Sc. & M.Sc.)"
+                additionalName=", Frankfurt University of Applied Sciences, Germany"
+                years="Sep 2024 - Feb 2025"
+                content="GPA: 1,5"
               />
             </motion.div>
           </div>

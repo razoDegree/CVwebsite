@@ -9,6 +9,19 @@ const WorkHistory = () => {
     "- Monitoring data and drawing lessons and conclusions",
   ];
 
+  const SoftSkills = [
+    "- Leadership & Team Management",
+    "- Project Management", 
+    "- Teamwork",
+    "- Training and Instruction", 
+    "- Analytical Thinking", 
+    "- Responsibility and Initiative", 
+    "- Multitasking and Working Under Pressure", 
+    "- Interpersonal Communication", 
+    "- Ambition and Persistence", 
+    "- Organization and Order"
+  ]
+
   const titleVariants = {
     hidden: { y: "100%" }, // Start from behind the "wall"
     visible: {
@@ -76,26 +89,6 @@ const WorkHistory = () => {
           <div>
             <motion.div variants={cardVariants}>
               <InfoCard
-                name="Courier (part-time)"
-                additionalName=", Givat Brenner"
-                years="Jul 2021 - Aug 2021"
-                content="at Katz Deliveries Ltd."
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Surfing Instructor (part-time)"
-                additionalName=", Bat Yam"
-                years="Apr 2017 - Aug 2018"
-                content="at Get-Surf School Ltd."
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
                 name="Assistant Economist (part-time)"
                 additionalName=", Givat Brenner"
                 years="Jul 2021 - Aug 2022"
@@ -128,6 +121,21 @@ const WorkHistory = () => {
                 content="- Real estate investment company"
               />
             </motion.div>
+            <br />
+            
+            <motion.div variants={cardVariants}>
+              <InfoCard
+                name="Personal Soft Skills"
+                years={
+                  <div>
+                    {SoftSkills.map((line, index) => (
+                      <div key={index}>{line}</div>
+                    ))}
+                  </div>
+                }
+              />
+            </motion.div>
+
           </div>
         </motion.div>
       </div>
