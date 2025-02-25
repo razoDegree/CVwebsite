@@ -4,7 +4,12 @@ import AttachFileIcon from "@mui/icons-material/AttachFile";
 
 function Header() {
   const handleRedirectCV = () => {
-    window.open("https://www.google.com", "_blank"); // Redirect to CV link
+    const link = document.createElement("a");
+    link.href = "/CV-RazKatz.pdf"; // File path 
+    link.download = "CV-RazKatz.pdf"; // File name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleRedirectRAZO = () => {
