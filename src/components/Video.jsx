@@ -1,33 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
-import codingVideo from "../assets/coding-video.mp4";
+import gifCoding from "../assets/gifCoding.gif";
 
 function Video() {
     return (
-        <div className="video-wrapper">
-            <div className="video-container">
+        <div className="gif-wrapper">
+            <div className="gif-container">
                 {/* White box animation */}
                 <motion.div
                     className="cover-box"
-                    initial={{ top: "0%" }} // Start fully covering the video
-                    animate={{ top: "-100%" }} // Move up to reveal the video
+                    initial={{ top: "0%" }} // Start fully covering the gif
+                    animate={{ top: "-100%" }} // Move up to reveal the gif
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                 />
-                {/* Static video */}
-                <video className="static-video" 
-                    autoPlay 
-                    muted 
-                    loop 
-                    playInline 
-                    disablePictureInPicture 
-                    controlsList="nodownload nofullscreen noremoteplayback"
-                    onContextMenu={(e) => e.preventDefault()} // Disable rigth-click menu
-                > 
-                    <source src={codingVideo} type="video/mp4" />
-                </video>
+                {/* Static gif */}
+                <img className="static-gif" src={gifCoding} alt="Animated Coding GIF" />
             </div>
         </div>
     );
 }
 
-export default Video;
+export default Video; 
