@@ -19,7 +19,7 @@ const WorkHistory = () => {
     "- Multitasking and Working Under Pressure", 
     "- Interpersonal Communication", 
     "- Ambition and Persistence", 
-    "- Organization and Order"
+    "- Organize and Order"
   ]
 
   const titleVariants = {
@@ -105,10 +105,20 @@ const WorkHistory = () => {
 
             <motion.div variants={cardVariants}>
               <InfoCard
-                name="Real Estate Transaction Analyst"
+                name="Community Manager (Founder)"
+                additionalName=", Rishon LeZion"
+                years="Dec 2021 - Nov 2022"
+                content="of Crypto & Stocks investors, at nftspace IL"
+              />
+            </motion.div>
+            <br />
+
+            <motion.div variants={cardVariants}>
+              <InfoCard
+                name="Real Estate Investments Analyst"
                 additionalName=", Rishon LeZion"
                 years="Jan 2022 - Jun 2022"
-                content="at Lidor Agam Investments Ltd."
+                content="at Lidor Agam Ltd."
               />
             </motion.div>
             <br />

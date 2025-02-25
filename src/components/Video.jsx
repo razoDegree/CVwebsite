@@ -14,7 +14,15 @@ function Video() {
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                 />
                 {/* Static video */}
-                <video className="static-video" autoPlay muted loop>
+                <video className="static-video" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playInline 
+                    disablePictureInPicture 
+                    controlsList="nodownload nofullscreen noremoteplayback"
+                    onContextMenu={(e) => e.preventDefault()} // Disable rigth-click menu
+                > 
                     <source src={codingVideo} type="video/mp4" />
                 </video>
             </div>
