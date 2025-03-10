@@ -89,9 +89,9 @@ const WorkHistory = () => {
           <div>
             <motion.div variants={cardVariants}>
               <InfoCard
-                name="Assistant Economist (part-time)"
-                additionalName=", Givat Brenner"
-                years="Jul 2021 - Aug 2022"
+                name="Assistant Economist"
+                additionalName=", Rishon LeZion"
+                years="Aug 2021 - Feb 2022"
                 content={
                   <div>
                     {EconomistKatz.map((line, index) => (
@@ -115,9 +115,9 @@ const WorkHistory = () => {
 
             <motion.div variants={cardVariants}>
               <InfoCard
-                name="Real Estate Investments Analyst"
+                name="Real Estate Investments Analyst (part-time)"
                 additionalName=", Rishon LeZion"
-                years="Jan 2022 - Jun 2022"
+                years="Jan 2022 - May 2024"
                 content="at Lidor Agam Ltd."
               />
             </motion.div>
