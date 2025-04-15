@@ -143,7 +143,8 @@ function Education() {
                 content={
                   <div>
                     - Part of the excellence program for CS students <br/>
-                    GPA: 91
+                    - On the dean's list for 2024 <br/>
+                    GPA: 91.2
                   </div>
                 }
               />

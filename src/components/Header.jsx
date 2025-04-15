@@ -12,15 +12,10 @@ function Header() {
     document.body.removeChild(link);
   };
 
-  const handleRedirectRAZO = () => {
-    window.location.href = "http://localhost:5173"; // Redirect to the original site
-  };
-
   return (
     <header>
       {/* Header text (h1) with animation */}
       <motion.h1
-        onClick={handleRedirectRAZO}
         initial={{ opacity: 0, y: -50 }} // Start invisible and above
         animate={{ opacity: 1, y: 0 }}  // End visible and at normal position
         transition={{ duration: 2, ease: "easeOut" }} // Duration and easing
