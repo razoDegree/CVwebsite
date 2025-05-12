@@ -73,6 +73,77 @@ function Education() {
           variants={cardContainerVariants}
         >
           <div className="education-line"></div>
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="Exchange Student for Computer Science (Mixed B.Sc. & M.Sc.)"
+              additionalName=", Frankfurt University of Applied Sciences, Germany"
+              years="Sep 2024 - Feb 2025"
+              content="GPA: 1,5"
+            />
+          </motion.div>
+          <br />
+
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="Double Major in Computer Science and Entrepreneurship B.Sc."
+              additionalName=", Reichman University"
+              years="Nov 2022 - Present (3rd year)"
+              content={
+                <div>
+                  - Part of the excellence program for CS students <br />
+                  - On the dean's list for 2024 <br />
+                  GPA: 91.2
+                </div>
+              }
+            />
+          </motion.div>
+          <br />
+
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="Fullstack Bootcamp Course by Dr. Angela Yu"
+              additionalName=", Udemy"
+              years="Jul 2023 - Sep 2023"
+            />
+          </motion.div>
+          <br />
+
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="UI/UX Course as part of the RUNI Tools Program"
+              additionalName=", Reichman University"
+              years="Apr 2022 - Jun 2023"
+            />
+          </motion.div>
+          <br />
+
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="Proptech Club"
+              additionalName=", Reichman University"
+              years="Apr 2022 - Jul 2023"
+            />
+          </motion.div>
+          <br />
+
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="Real Estate Club"
+              additionalName=", Reichman University"
+              years="Nov 2022 - Mar 2023"
+            />
+          </motion.div>
+          <br />
+
+          <motion.div variants={cardVariants}>
+            <InfoCard
+              name="Excel Beginner + Advanced Course"
+              additionalName=", CampusIL"
+              years="Jul 2021 - Aug 2021"
+            />
+          </motion.div>
+          <br />
+
           <div>
             <motion.div variants={cardVariants}>
               <InfoCard
@@ -90,75 +161,6 @@ function Education() {
             </motion.div>
             <br />
 
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Excel Beginner + Advanced Course"
-                additionalName=", CampusIL"
-                years="Jul 2021 - Aug 2021"
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Real Estate Club"
-                additionalName=", Reichman University"
-                years="Nov 2022 - Mar 2023"
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Proptech Club"
-                additionalName=", Reichman University"
-                years="Apr 2022 - Jul 2023"
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="UI/UX Course as part of the RUNI Tools Program"
-                additionalName=", Reichman University"
-                years="Apr 2022 - Jun 2023"
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Fullstack Bootcamp Course by Dr. Angela Yu"
-                additionalName=", Udemy"
-                years="Jul 2023 - Sep 2023"
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Double Major in Computer Science and Entrepreneurship B.Sc."
-                additionalName=", Reichman University"
-                years="Nov 2022 - Present (3rd year)"
-                content={
-                  <div>
-                    - Part of the excellence program for CS students <br/>
-                    - On the dean's list for 2024 <br/>
-                    GPA: 91.2
-                  </div>
-                }
-              />
-            </motion.div>
-            <br />
-
-            <motion.div variants={cardVariants}>
-              <InfoCard
-                name="Exchange Student for Computer Science (Mixed B.Sc. & M.Sc.)"
-                additionalName=", Frankfurt University of Applied Sciences, Germany"
-                years="Sep 2024 - Feb 2025"
-                content="GPA: 1,5"
-              />
-            </motion.div>
           </div>
         </motion.div>
       </div>
