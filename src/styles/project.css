@@ -20,7 +20,7 @@
   opacity: 0.5;
   border-radius: 3vw;
   color: white;
-  max-width: 40vw;
+  width: 40vw;
   text-align: center;
   transition: all 0.25s ease;
 }

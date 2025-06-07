@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Project from "./Project.jsx";
 import CVsite from "../assets/projects/CVsite.png";
 import austria from "../assets/projects/austria.jpg";
-import uk from "../assets/projects/uk.jpg";
+import Library from "../assets/projects/Library.png";
 import papers from "../assets/papers.gif";
 
 function ProjectsSection() {
@@ -49,13 +49,13 @@ function ProjectsSection() {
         description="A personal online portfolio showcasing user professional background, skills, and achievements."
         link="https://github.com/razoDegree/CVwebsite"
       />
-      {/* <Project
-        img={uk}
-        alt="uk"
-        name="Riyadh"
-        description="Official website of Riyadh, Saudi"
-        link="https://www.github2.com"
-      /> */}
+      <Project
+        img={Library}
+        alt="Library"
+        name="Library Project"
+        description="A containerized microservice-based digital library system that manages books, ratings, and loan operations with high availability and load balancing via NGINX."
+        link="https://www.github.com/razoDegree/Library-Cloud"
+      />
       {/* <Project
         img={austria}
         alt="austria"
