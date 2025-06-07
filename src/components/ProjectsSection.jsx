@@ -47,6 +47,7 @@ function ProjectsSection() {
         alt="CV website photo"
         name="CV Website"
         description="A personal online portfolio showcasing user professional background, skills, and achievements."
+        stack="React JS · CSS · gsap"
         link="https://github.com/razoDegree/CVwebsite"
       />
       <Project
@@ -54,6 +55,7 @@ function ProjectsSection() {
         alt="Library"
         name="Library Project"
         description="A containerized microservice-based digital library system that manages books, ratings, and loan operations with high availability and load balancing via NGINX."
+        stack="Python · Flask · MongoDB · Docker · NGINX · Google Books API"
         link="https://www.github.com/razoDegree/Library-Cloud"
       />
       {/* <Project

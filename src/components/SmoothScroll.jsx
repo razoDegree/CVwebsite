@@ -1,7 +1,6 @@
 import React, { createContext, useEffect, useRef } from "react";
 import Scrollbar from "smooth-scrollbar";
 
-// יצירת קונטקסט כדי לשתף את ה-scrollbar בכל האפליקציה
 export const ScrollbarContext = createContext();
 
 const SmoothScroll = ({ children }) => {

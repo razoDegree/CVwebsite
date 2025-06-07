@@ -35,7 +35,9 @@ function Project(props) {
       </div>
       {/* Project Footer */}
       <div className="project-footer">
-        {props.name} <span className="highlight">{props.description}</span>
+        {props.name}
+        <span className="stack">{props.stack}</span>
+        <span className="description">{props.description}</span>
       </div>
     </motion.div>
   );

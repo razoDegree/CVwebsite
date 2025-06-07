@@ -46,6 +46,7 @@
 .project-footer {
   margin-top: 2vh;
   margin-bottom: 4vh;
+  width: 50%;
   color: #fffff7;
   text-align: center; /* Center align the text */
   display: flex;
@@ -53,8 +54,16 @@
   align-items: center; /* Center horizontally */
 }
 
-.project-footer .highlight {
+.project-footer .description {
   margin-top: 1vh; /* Add spacing between name and description */
+  font-weight: 100;
+}
+
+.project-footer .stack {
+  margin-top: 1vh; /* Add spacing between name and description */
+  font-weight: 100;
+  font-style: italic;
+  font-size: smaller;
 }
 
 /* Responsive Design */
