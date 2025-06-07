@@ -5,7 +5,7 @@ import AttachFileIcon from "@mui/icons-material/AttachFile";
 function Header() {
   const handleRedirectCV = () => {
     const link = document.createElement("a");
-    link.href = "/CV-RazKatz.pdf"; // File path 
+    link.href = "/CV.pdf"; // File path 
     link.download = "CV-RazKatz.pdf"; // File name
     document.body.appendChild(link);
     link.click();
