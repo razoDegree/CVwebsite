@@ -35,27 +35,24 @@ function App() {
     document.head.appendChild(script2)
   }, [])
 
-  function App() {
-
-    return (
-      <>
-        <CustomCursor>
-          <FloatingMemoji />
-          <SmoothScroll>
-            <Header />
-            <LandingContiner />
-            <Video />
-            <ShortDescription />
-            <ProjectSection />
-            <WorkHistory />
-            <Education />
-            <Carousel />
-            <MakeContact />
-          </SmoothScroll>
-        </CustomCursor>
-      </>
-    );
-  }
+  return (
+    <>
+      <CustomCursor>
+        <FloatingMemoji />
+        <SmoothScroll>
+          <Header />
+          <LandingContiner />
+          <Video />
+          <ShortDescription />
+          <ProjectSection />
+          <WorkHistory />
+          <Education />
+          <Carousel />
+          <MakeContact />
+        </SmoothScroll>
+      </CustomCursor>
+    </>
+  );
 }
 
 export default App;
